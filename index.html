@@ -10,6 +10,38 @@
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W8SFKW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W8SFKW');</script>
         <!-- End Google Tag Manager -->
 
-        <p>Hello GTM</p>
+        <h1>Product list page</h1>
+        <ul>
+            <li><a href="product1.html">Product 1</a></li>
+            <li><a href="product2.html">Product 2</a></li>
+        </ul>
+
+        <script>
+        dataLayer.push({
+            'ecommerce': {
+                'currencyCode': 'KWR',
+                'impressions': [
+                    {
+                        'name': 'Product A',
+                        'id': '1',
+                        'price': '10000',
+                        'brand': 'Awesome Brand',
+                        'category': 'New',
+                        'list': 'Main',
+                        'position': 1
+                    },
+                    {
+                        'name': 'Product B',
+                        'id': '1',
+                        'price': '15000',
+                        'brand': 'Awesome Brand',
+                        'category': 'New',
+                        'list': 'Main',
+                        'position': 2
+                    }
+                ]
+            }
+        });
+        </script>
     </body>
 </html>
